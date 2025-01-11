@@ -91,9 +91,11 @@ header nav a {
 /* hero style end */
 
 /* pillar section style start */
+
 .pillar-section .card {
     background-color: var(--light);
     border: 1px solid var(--dark-shade);
+    flex: 1;
 }
 
 .pillar-section .card-title {
@@ -109,6 +111,7 @@ header nav a {
 }
 
 .vision-future .card {
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -215,6 +218,10 @@ header nav a {
 
 .recent-news .news-card>img {
     border-radius: 24px;
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+
 }
 
 .news-card .news-details {
@@ -229,7 +236,9 @@ header nav a {
 }
 
 .news-card .news-details img {
+
     margin: 12px 0;
+    height: 34px;
 }
 
 .news-card .news-details .time {
@@ -352,7 +361,6 @@ input[type="radio"]:checked+.section-title {
     margin: 0 0 50px 0;
     height: 1px;
     border: 0px;
-    /* border: 1px solid var(--dark2); */
     background-color: var(--secondary);
     width: 100%;
 
