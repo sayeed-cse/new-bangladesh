@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --dark: #0e0e0e;
+    --primary: #006a50;
+    --secondary: #c6e4d6;
+    --light-green: #c6e4d6;
+    --light: #ffffff;
+    --dark-shade: #0e0e0e26;
+    --dark2: #0e0e0eb3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F5F5F5;
+    font-family: "Fira Sans", serif;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+
+}
+
+.header-section {
+    padding: 50px 0;
+}
+
+.nav-logo {
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--dark);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 30px;
+    border: 1px solid var(--primary);
+    border-radius: 8px;
+}
+
+/* hero style start */
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    background-color: var(--light-green);
+    padding: 80px 60px;
+    border-radius: 24px;
+}
+
+.hero-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.hero-details h5 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #0e0e0e80;
+}
+
+.hero-details h1 {
+    font-size: 56px;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 8px;
+}
+
+.hero div img {
+    width: 475px;
+}
+
+/* hero style end */
+
+/* pillar section style start */
+.pillar-section .card {
+    background-color: var(--light);
+    border: 1px solid var(--dark-shade);
+}
+
+.pillar-section .card-title {
+    margin-top: 25px;
+    margin-bottom: 12px;
+}
+
+/* pillar section style end */
+
+/* vision-future style start*/
+.vision-future .cards {
+    margin-top: 32px;
+}
+
+.vision-future .card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.card.card-blue {
+    background-color: rgba(84, 144, 245, 0.2);
+}
+
+.card.card-blue a {
+    background-color: rgb(84, 144, 245);
+}
+
+.card.card-green {
+    background-color: rgb(9, 161, 92, 0.2);
+}
+
+.card.card-green a {
+    background-color: rgb(9, 161, 92);
+}
+
+.card.card-yellow {
+    background-color: rgb(255, 194, 57, 0.2);
+}
+
+.card.card-yellow a {
+    background-color: rgb(255, 194, 57);
+}
+
+.vision-future .message {
+    margin-top: 32px;
+    padding: 48px 24px;
+    background-color: var(--light);
+    background-image: url('./../assets/quote-bg.png');
+    background-repeat: no-repeat;
+    background-position: 24px 24px;
+}
+
+.vision-future .message p {
+    color: var(--dark2);
+}
+
+.vision-future .message h5 {
+    font-weight: 600;
+}
+
+/* vision-future style end */
+
+/* your opinion style start */
+.your-opinion .card {
+    background-color: var(--light);
+    padding: 32px;
+}
+
+.your-opinion .opinions-table {
+    border: 1px solid var(--dark2);
+    border-collapse: collapse;
+    width: 100%;
+}
+.opinions-table tr:first-child{
+    background-color: var(--secondary);
+}
+.opinions-table tr{
+    display: flex;
+    justify-content: space-between;
+}
+.opinions-table th {
+    padding: 24px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.opinions-table td {
+    border: 1px solid var(--dark-shade);
+    padding: 24px;
+}
+
+.opinions-table td:first-child{
+    font-weight: 600;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+/* your opinion style end*/
