@@ -169,13 +169,16 @@ header nav a {
     border-collapse: collapse;
     width: 100%;
 }
-.opinions-table tr:first-child{
+
+.opinions-table tr:first-child {
     background-color: var(--secondary);
 }
-.opinions-table tr{
+
+.opinions-table tr {
     display: flex;
     justify-content: space-between;
 }
+
 .opinions-table th {
     padding: 24px;
     font-size: 20px;
@@ -187,10 +190,105 @@ header nav a {
     padding: 24px;
 }
 
-.opinions-table td:first-child{
+.opinions-table td:first-child {
     font-weight: 600;
     flex: 1;
     display: flex;
     align-items: center;
 }
+
 /* your opinion style end*/
+
+/* recent news style start */
+.recent-news>p {
+    margin-bottom: 32px;
+}
+
+.recent-news .news-card {
+    display: flex;
+    gap: 32px;
+    padding: 48px;
+    background-color: var(--light);
+    border-radius: 24px;
+    margin-bottom: 24px;
+}
+
+.recent-news .news-card>img {
+    border-radius: 24px;
+}
+
+.news-card .news-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.news-card .news-details .button-primary {
+    margin-top: 32px;
+}
+
+.news-card .news-details img {
+    margin: 12px 0;
+}
+
+.news-card .news-details .time {
+    margin: 12px 0;
+}
+
+.news-card .news-details .news-title {
+    font-size: 32px;
+    font-weight: 700;
+
+}
+
+.recent-news .news-card.swap {
+    flex-direction: row-reverse;
+}
+
+/* recent news style end */
+
+/* donate style start */
+.donate-today form {
+    margin: 0 80px;
+    text-align: center;
+}
+
+.select-amount {
+    margin: 32px 0;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+.select-amount input[type="radio"] {
+    display: none;
+}
+
+.select-amount .section-title {
+    padding: 40px;
+    background-color: var(--light);
+    border-radius: 16px;
+    border: 1px solid var(--secondary);
+}
+
+.select-amount .section-title:hover {
+    background: var(--secondary);
+}
+
+input[type="radio"]:checked+.section-title {
+    background: var(--secondary);
+}
+
+.donate-today form .other-amount {
+    width: 100%;
+    padding: 20px 40px;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+}
+.donate-today form .button-primary{
+    border: none;
+    margin-top: 32px;
+}
+/* donate style end */
